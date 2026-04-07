@@ -38,7 +38,7 @@ num_frames = 57
 num_views = 3
 
 
-unirelight_I2V_f57_480p = LazyDict(
+unirelight_cosmos_f57_480p = LazyDict(
     dict(
         defaults=[
             {"override /net": "faditv2_7b"},
@@ -51,7 +51,7 @@ unirelight_I2V_f57_480p = LazyDict(
         job=dict(
             project="posttraining",
             group="unirelight",
-            name="unirelight_I2V_f57_480p",
+            name="unirelight_cosmos_f57_480p",
         ),
         optimizer=dict(
             lr=2e-5,
@@ -162,10 +162,10 @@ unirelight_I2V_f57_480p = LazyDict(
 
 
 
-log.info(f"Registering experiment: unirelight_I2V_f57_480p")
+log.info(f"Registering experiment: unirelight_cosmos_f57_480p")
 cs.store(
     group="experiment",
     package="_global_",
-    name="unirelight_I2V_f57_480p",
-    node=unirelight_I2V_f57_480p,
+    name="unirelight_cosmos_f57_480p",
+    node=unirelight_cosmos_f57_480p,
 )

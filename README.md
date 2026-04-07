@@ -112,7 +112,7 @@ python scripts/dataproc_extract_frames_from_video.py \
 ```
 python -m cosmos_predict1.diffusion.inference.single_gpu_relight \
         --config_file cosmos_predict1/diffusion/training/config/config_relight.py \
-        --config unirelight_I2V_f57_480p \
+        --config unirelight_cosmos_f57_480p \
         --ckpt_path checkpoints/UniRelight/model.pt \
         --dataset_name assets/examples/video_frames_examples/ \
         --output_path ./outputs/video_relighting \
@@ -124,7 +124,7 @@ We can also use a static frame and show relighting with a rotating environment l
 ```
 python -m cosmos_predict1.diffusion.inference.single_gpu_relight \
         --config_file cosmos_predict1/diffusion/training/config/config_relight.py \
-        --config unirelight_I2V_f57_480p \
+        --config unirelight_cosmos_f57_480p \
         --ckpt_path checkpoints/UniRelight/model.pt \
         --dataset_name assets/examples/video_frames_examples/ \
         --output_path ./outputs/video_relighting_rotation \
