@@ -75,7 +75,7 @@ inference_input_dir/
 └── video_n/...
 ```
 
-The inference script can run with the following command:
+The inference script can be run with the following command:
 ```
 python -m cosmos_predict1.diffusion.inference.single_gpu_relight \
         --config_file ${CFG1} \
@@ -86,17 +86,17 @@ python -m cosmos_predict1.diffusion.inference.single_gpu_relight \
         --seed ${SEED} \
         --sample_n_frames ${N_FRAMES} \
         --env_light_path ${ENV_LIGHT_DIR} \
-        --rotate_light ${ROTATE_LIGHT} \
+        --rotate_light ${ROTATE_LIGHT}
 ```
-- `${CFG1}`: the path to config file.
-- `${CFG2}`: the path to the experiment config file.
-- `${CHECKPOINT}`: the path to the checkpoint.
-- `${INPUT_DIR}`: the path to input directory.
-- `${OUT_DIR}`: the path to the output directory.
-- `${SEED}`: the number of random seed.
-- `${N_FRAMES}`: the number of inference frames.
-- `${ENV_LIGHT_DIR}`: the path to environment maps (HDRIs) directory.
-- `${ROTATE_LIGHT}`: true/false indicates if we rotate the lights.
+- `${CFG1}`: path to the config file
+- `${CFG2}`: name of the job in the config
+- `${CHECKPOINT}`: path to the checkpoint
+- `${INPUT_DIR}`: path to the input directory
+- `${OUT_DIR}`: path to the output directory
+- `${SEED}`: random seed
+- `${N_FRAMES}`: number of inference frames
+- `${ENV_LIGHT_DIR}`: path to the environment maps (HDRI) directory
+- `${ROTATE_LIGHT}`: whether to rotate the lights (true/false)
 
 ### Video examples:
 
