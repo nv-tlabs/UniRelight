@@ -24,7 +24,6 @@ apex/
 # Data types
 *.jit
 *.pt
-# *.hdr
 *.webp
 *.pgm
 *.tiff
