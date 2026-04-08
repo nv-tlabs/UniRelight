@@ -15,16 +15,11 @@
 
 # Misc
 outputs/
-results_output/
-experiments_output/
 checkpoints/*
 !checkpoints/README.md
 datasets/*
 !datasets/README.md
 apex/
-slurm_out/
-metrics/
-run_log/
 
 # Data types
 *.jit
@@ -41,7 +36,6 @@ run_log/
 *.pt
 *.bin
 *.pickle
-*.txt
 
 # Other uncheckable file types
 *.zip
